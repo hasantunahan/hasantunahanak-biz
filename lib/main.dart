@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_tester/home/view/home.dart';
-import 'package:new_tester/provider/theme_provider.dart';
+import 'package:hasantunahanak_biz/home/view/home.dart';
+import 'package:hasantunahanak_biz/provider/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_tester/home/viewmodel/home_viewmodel.dart';
+import 'package:hasantunahanak_biz/home/viewmodel/home_viewmodel.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -29,7 +29,22 @@ class HomePageState extends State<HomePage> {
           child: Column(
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [Text("deneme")],
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              ClipRRect(
+                borderRadius: BorderRadius.circular(8.0),
+                child: Image.asset(
+                  'assets/image/hasan.png',
+                  width: 100,
+                  height: 100,
+                ),
+              )
+            ],
+          )
+        ],
       )),
     );
   }
@@ -40,9 +55,8 @@ class HomePageState extends State<HomePage> {
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12.0),
-        boxShadow: [
-          const BoxShadow(
-              blurRadius: 5, color: Colors.grey, offset: Offset(1, 1))
+        boxShadow: const [
+          BoxShadow(blurRadius: 5, color: Colors.grey, offset: Offset(1, 1)),
         ],
       ),
       child: child,

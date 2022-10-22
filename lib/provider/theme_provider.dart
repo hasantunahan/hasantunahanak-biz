@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:new_tester/theme/dark_theme.dart';
-import 'package:new_tester/theme/light_theme.dart';
+import 'package:hasantunahanak_biz/theme/dark_theme.dart';
+import 'package:hasantunahanak_biz/theme/light_theme.dart';
 
 enum ThemeEnum {
   dark('dark'),
