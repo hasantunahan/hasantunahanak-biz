@@ -1,19 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hasantunahanak_biz/home/view/home.dart';
-import 'package:hasantunahanak_biz/provider/theme_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:hasantunahanak_biz/theme/light_theme.dart';
 
 void main() {
-  runApp(
-    MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: ((context) {
-          return ThemeProvider();
-        })),
-      ],
-      child: const HasanTunahanApp(),
-    ),
-  );
+  runApp(const HasanTunahanApp());
 }
 
 class HasanTunahanApp extends StatelessWidget {
@@ -25,7 +15,7 @@ class HasanTunahanApp extends StatelessWidget {
     return MaterialApp(
       title: "Hasan Tunahan AK",
       debugShowCheckedModeBanner: false,
-      theme: context.watch<ThemeProvider>().currentTheme,
+      theme: MyLightTheme.theme,
       home: const HomePage(),
     );
   }
